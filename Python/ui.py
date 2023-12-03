@@ -1,4 +1,4 @@
-import FunctionFile as fu
+import functionfile as fu
 import encode, decode
 import json
 
