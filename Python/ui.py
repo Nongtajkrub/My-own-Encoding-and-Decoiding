@@ -15,10 +15,10 @@ class Ui:
         text = input(fu.input_s("Text: ", "Green"))
         fu.print_s("encode\ndecode", "Blue")
         choice = input(fu.input_s("Enter your choice: ", "Red"))
-        if choice == "en":
+        if choice == "en" or choice == "encode":
             encoding = encode.Encode(encode_char = self.encode_char["encode"], data = text)
             print(encoding.encode())
-        elif choice == "de":
+        elif choice == "de" or choice == "decode":
             decoding = decode.Decode(decode_char = self.decode_char["decode"], data = text)
             print(decoding.decode())
         else: fu.print_s("Pls enter a valid choice\n", "Red"); self.mainMenu()
