@@ -1,6 +1,4 @@
 import ui
-import sys
 
-ui.ui.mainMenu()
-
-sys.exit()
+if __name__ == "__main__":
+    ui.ui.main()
