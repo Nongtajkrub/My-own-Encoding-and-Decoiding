@@ -31,7 +31,7 @@ class Ui:
         
         self.ui_info_text = tk.Label(self.app, text = "This is the version 0.1 of the ui")
         self.ui_info_text.pack()
-        self.code_info_text = tk.Label(self.app, text = "Current code version 0.3 alpha")
+        self.code_info_text = tk.Label(self.app, text = "Current code version 0.25 alpha")
         self.code_info_text.pack()
         self.how_to_use = tk.Label(self.app, text = "If you have trouble using this UI, you can refer to the instruction.txt file\n or visit the GitHub download page (the download page for this source code)\n for more information.")
         self.how_to_use.pack()
