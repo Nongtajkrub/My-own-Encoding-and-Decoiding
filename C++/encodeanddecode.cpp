@@ -45,19 +45,14 @@ std::string decode(std::string encode_text)
 
     std::string result;
     std::string temp_string;
-    std::vector<std::string> formated;
 
     for (int i = 1; i < encode_text.length() + 1; i++) {
         temp_string += encode_text[i - 1];  
         if (i % 3 == 0) {
-            formated.push_back(temp_string);
+            result += json_data["decode"][temp_string];
             temp_string = "";
         }
     } 
-
-    for (int i = 0; i < formated.size(); i++) {
-        result += json_data["decode"][formated[i]];
-    }
 
     return result;
 
@@ -93,6 +88,7 @@ void mainMenu()
         std::getline(std::cin, text);
 
         std::cout << "1 for Encoding\n2 for Decoding\n";
+        std::cout << "Pick: "
         std::cin >> choice;
 
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -105,7 +101,8 @@ void mainMenu()
                 std::cout << decode(text) << "\n";
                 break;
             default:
-                std::cout << "invalid choice!";
+                std::cout << "Enter a valid choice\n";
+                std::cin.clear();
                 break;
         }        
     }
