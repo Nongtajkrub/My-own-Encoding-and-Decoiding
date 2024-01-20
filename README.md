@@ -1,6 +1,6 @@
 # My-own-Encoding-and-Decoiding
 
-**THIS PROJET IS NO LONGER BEING WORK ON**
+<span style="color: red;">**THIS PROJET IS NO LONGER BEING WORK ON**</span>
 
 This is my own Encoding and Decoiding system that I made
 
